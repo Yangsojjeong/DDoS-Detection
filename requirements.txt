@@ -1,0 +1,5 @@
+﻿tensorflow==2.7.1
+scikit-learn
+h5py
+pyshark
+protobuf==3.19.6

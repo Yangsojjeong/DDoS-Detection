@@ -1,0 +1,5 @@
+TP=43833, TN=41777, FP=926, FN=4008
+Accuracy=0.9455
+Precision=0.9793
+Recall=0.9162
+F1=0.9467

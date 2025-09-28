@@ -1,0 +1,22 @@
+$ignore = @"
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+
+# Data & artifacts
+DataSet/
+preprocessing data/
+data/
+*.h5
+*.hdf5
+*.ckpt
+*.log
+
+# OS/IDE
+.vscode/
+.DS_Store
+"@
+$ignore | Set-Content -Encoding utf8 .gitignore

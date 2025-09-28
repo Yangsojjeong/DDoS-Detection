@@ -1,0 +1,2 @@
+Model,Time,Packets,Samples,DDOS%,Accuracy,F1Score,TPR,FPR,TNR,FNR,Source
+32t-10n-Last-Last-best.h5,0.000,905440,90544,0.494,0.9455,0.9467,0.9162,0.0217,0.9783,0.0838,32t-10n-Last-dataset-test.hdf5
