@@ -1,0 +1,62 @@
+{
+  "time": "2025-09-28 15:20:37",
+  "examples": {
+    "tot": 565901,
+    "ben": 266894,
+    "ddos": 299007
+  },
+  "fractions": {
+    "dev_fraction": 0.8,
+    "dev_split": {
+      "train": 0.6,
+      "val": 0.2,
+      "test": 0.2
+    },
+    "inference_fraction": 0.2
+  },
+  "sizes": {
+    "train": 271632,
+    "val": 90544,
+    "test": 90544,
+    "infer": 113181
+  },
+  "shape": {
+    "H": 10,
+    "W": 26
+  },
+  "feature_cols": [
+    "frame.encap_type",
+    "frame.len",
+    "ip.hdr_len",
+    "ip.len",
+    "ip.flags.rb",
+    "ip.flags.df",
+    "p.flags.mf",
+    "ip.frag_offset",
+    "ip.ttl",
+    "ip.proto",
+    "tcp.srcport",
+    "tcp.dstport",
+    "tcp.len",
+    "tcp.ack",
+    "tcp.flags.res",
+    "tcp.flags.ns",
+    "tcp.flags.cwr",
+    "tcp.flags.ecn",
+    "tcp.flags.urg",
+    "tcp.flags.ack",
+    "tcp.flags.push",
+    "tcp.flags.reset",
+    "tcp.flags.syn",
+    "tcp.flags.fin",
+    "tcp.window_size",
+    "tcp.time_delta"
+  ],
+  "files": {
+    "train": "C:\\Users\\zoezo\\DDoS Detection\\LAST\\32t-10n-Last-dataset-train.hdf5",
+    "val": "C:\\Users\\zoezo\\DDoS Detection\\LAST\\32t-10n-Last-dataset-val.hdf5",
+    "test": "C:\\Users\\zoezo\\DDoS Detection\\LAST\\32t-10n-Last-dataset-test.hdf5",
+    "infer": "C:\\Users\\zoezo\\DDoS Detection\\LAST\\32t-10n-Last-dataset-infer.hdf5",
+    "scaler": "C:\\Users\\zoezo\\DDoS Detection\\LAST\\32t-10n-Last-dataset-scaler.json"
+  }
+}
