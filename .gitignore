@@ -1,4 +1,3 @@
-$ignore = @"
 # Python
 __pycache__/
 *.pyc
@@ -6,17 +5,17 @@ __pycache__/
 # Virtualenv
 .venv/
 
-# Data & artifacts
-DataSet/
-preprocessing data/
-data/
-*.h5
-*.hdf5
-*.ckpt
-*.log
+# Model artifacts (예: Keras 저장 파일은 LFS 추적으로 관리하므로 필요 시 허용)
+# *.h5  <-- (여기선 LFS로 올릴 거라서 주석/삭제)
+
+# Data & artifacts (기본)
+# 전체 DataSet 무시는 하지 말자. (DataSet/ 라인이 있으면 지우기)
+# DataSet/*        <-- 이런 라인 있으면 삭제!
+
+# preprocessing data 폴더: HDF5만 제외하고(또는 LFS로 올릴 거면 제외하지 않음)
+# 우리가 지금은 hdf5도 올릴 거라면, 이 라인도 삭제하거나 주석 처리
+# preprocessing data/*.hdf5
 
 # OS/IDE
 .vscode/
 .DS_Store
-"@
-$ignore | Set-Content -Encoding utf8 .gitignore
